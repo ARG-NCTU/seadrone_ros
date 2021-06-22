@@ -6,7 +6,7 @@ This is a robot repo for seadrone, including ros package for
 
 ---
 ## Joystick Controller
-<h4 align="center"> <img src="https://github.com/DiaboloKiat/seadrone-project/blob/master/img/Joystick.png"/> </h4>
+<h4 align="center"> <img src="https://github.com/ARG-NCTU/seadrone_ros/blob/master/img/Joystick.png"/> </h4>
 
 ---
 
@@ -22,7 +22,9 @@ This is a robot repo for seadrone, including ros package for
 ### Setup
 - joy_node
 ```
-$ sudo apt-get install ros-{$ROS_DISTRO}-joy  # example : sudo apt-get install ros-melodic-joy
+$ sudo apt-get install ros-{$ROS_DISTRO}-joy 
+
+# example : sudo apt-get install ros-melodic-joy
 ```
 ---
 
