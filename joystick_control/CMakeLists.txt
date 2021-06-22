@@ -116,11 +116,14 @@ catkin_package(
 ## Build ##
 ###########
 
+SET(UDPUSER_INC_DIR src/udpUser)
+
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+  ${UDPUSER_INC_DIR}
 )
 
 ## Declare a C++ library
@@ -152,6 +155,9 @@ include_directories(
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
+
+add_executable(joystick_node src/joystick.cpp ${UDPUSER_INC_DIR}/CUDPCommUser.cpp)
+target_link_libraries(joystick_node ${catkin_LIBRARIES})
 
 #############
 ## Install ##
